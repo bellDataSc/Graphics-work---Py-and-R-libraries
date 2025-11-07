@@ -8,3 +8,9 @@
     final_path = f"/content/Ordering_Family_{family_name}.png"
     combined_img.save(final_path)
     print(f"Final chart saved at: {final_path}")
+
+
+
+# RUN
+
+generate_family_chart(data_history_file, code_file, "Washed Sand")
