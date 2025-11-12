@@ -1,0 +1,10 @@
+final_plot <- cowplot::plot_grid(
+    p, table_plot,
+    ncol = 1, rel_heights = c(2.5, 1)
+  )
+  
+  output_path <- paste0("/content/Ordering_Family_", family_name, ".png")
+  ggsave(output_path, final_plot, width = 14, height = 10, dpi = 300)
+  
+  message(paste("Final chart saved at:", output_path))
+}
